@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #29344B;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+:root{
+    --purple: #675883;
+    --pink: #e0d4f6;
+    --min: 300px;
+}
+
+.container {
+    width: min(75em, 100%);
+    margin: auto;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+    gap: 1em;
+    font-family: "Helvetica", sans-serif;
+}
+
+.title{
+    color: var(--pink);
+    text-align: center;
+    font-family: "Helvetica", sans-serif;
+}
+
+.card {
+    background-color: var(--purple);
+    border: 1px solid var(--pink);
+    border-radius: 5px;
+    color: var(--pink);
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+.card__table {
+    width: 100%;
+    text-align: center;
+}
